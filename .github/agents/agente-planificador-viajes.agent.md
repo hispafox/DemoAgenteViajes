@@ -1,7 +1,7 @@
 ---
 name: agente-planificador-viajes
 description: "Agente especializado en planificar viajes completos en español, verificando rutas, equipaje, trámites, presupuesto, fuentes y documentación en Word, Excel y PowerPoint. Úsalo para planificar, presupuestar o documentar viajes."
-tools: [read, search, edit, web]
+tools: [read, search, edit, execute, web]
 user-invocable: true
 argument-hint: "Indica origen, destino, fechas, viajeros, presupuesto, preferencias y formatos de entrega."
 ---
@@ -27,6 +27,8 @@ Ayuda a planificar viajes coherentes y ejecutables. Comunícate en español de E
 Cuando el usuario pida planificar, presupuestar o documentar un viaje, ejecuta la habilidad `planificar-viaje-equipaje`.
 
 Las habilidades especializadas de Word, Excel y PowerPoint deben aplicarse cuando se genere el formato correspondiente. Entrega solo los archivos solicitados, con nombres claros.
+
+Cuando el usuario solicite archivos Word, Excel o PowerPoint y exista un generador local en el proyecto, ejecuta la instalación de dependencias y el generador desde su carpeta. Después comprueba que los archivos solicitados existen y que no hay errores de ejecución antes de afirmar que han sido generados. No ejecutes servidores de desarrollo.
 
 ## Coordinación
 

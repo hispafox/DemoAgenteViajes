@@ -1,0 +1,12 @@
+{
+  "name": "entregables-azores-2026",
+  "private": true,
+  "scripts": {
+    "generar": "node generar.js"
+  },
+  "dependencies": {
+    "docx": "^9.5.1",
+    "exceljs": "^4.4.0",
+    "pptxgenjs": "^4.0.1"
+  }
+}
